@@ -25,9 +25,7 @@ export default function Comment({index, score, user, createdAt, content, replies
       "score": 0,
       "replyingTo": user.username,
       "user": {
-        "image": { 
-          "png": "./images/avatars/image-juliusomo.png",
-        },
+        "image": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-juliusomo.png",
         "username": "juliusomo"
       }
     }]
@@ -87,7 +85,7 @@ export default function Comment({index, score, user, createdAt, content, replies
               <div className="content">
                 <div className="header">
                   <div className="user">
-                    <img src={user.image.png} alt="User Image" />
+                    <img src={user.image} alt="User Image" />
                     <p> <span> {user.username} </span> </p>
                     {currentUser.username === user.username ? <div> you </div> : ""}
                     <p> {createdAt} </p>
