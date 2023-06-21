@@ -32,9 +32,7 @@ export default function App() {
       "createdAt": "Now",
       "score": 0,
       "user": {
-        "image": { 
-          "png": "./images/avatars/image-juliusomo.png",
-        },
+        "image": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-juliusomo.png",
         "username": "juliusomo"
       },
       "replies": []
