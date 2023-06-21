@@ -55,7 +55,8 @@ export default function App() {
           comments.length > 0 && comments.map((reply, index) => 
             <Comment 
               {...reply} 
-              key={reply.id} 
+              key={reply.id}
+              userImage={reply.user.image}
               sangria={false} 
               currentUser={data.currentUser} 
               setComments={setComments} 
