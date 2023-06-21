@@ -75,11 +75,11 @@ export default function Comment({index, score, user, createdAt, content, replies
             <article>
               <div className="likes">
                 <button>
-                  <img src="./images/icon-plus.svg" alt="Plus Icon" />
+                  <img src="https://raw.githubusercontent.com/GaelSM/Interactive-Comments/beae81a6cd5fa16fe787d92874f27b9df74ba57b/images/icon-plus.svg" alt="Plus Icon" />
                 </button>
                 <p> {score} </p>
                 <button>
-                  <img src="./images/icon-minus.svg" alt="Minus Icon" />
+                  <img src="https://raw.githubusercontent.com/GaelSM/Interactive-Comments/beae81a6cd5fa16fe787d92874f27b9df74ba57b/images/icon-minus.svg" alt="Minus Icon" />
                 </button>
               </div>
               <div className="content">
@@ -95,17 +95,17 @@ export default function Comment({index, score, user, createdAt, content, replies
                       ?
                       <div className="options">
                           <div className="delete" onClick={() => setIsDelete(true)}>
-                              <img src="./images/icon-delete.svg" alt="Delete Icon" />
+                              <img src="https://raw.githubusercontent.com/GaelSM/Interactive-Comments/beae81a6cd5fa16fe787d92874f27b9df74ba57b/images/icon-delete.svg" alt="Delete Icon" />
                               <p> Delete </p>
                           </div>
                           <div className="edit" onClick={() => setIsEdit(!isEdit)}>
-                              <img src="./images/icon-edit.svg" alt="Delete Icon" />
+                              <img src="https://raw.githubusercontent.com/GaelSM/Interactive-Comments/beae81a6cd5fa16fe787d92874f27b9df74ba57b/images/icon-edit.svg" alt="Delete Icon" />
                               <p> Edit </p>
                           </div>
                       </div>
                       :
                       <div className="reply" onClick={handleReply}>
-                          <img src="./images/icon-reply.svg" alt="Reply Icon" />
+                          <img src="https://raw.githubusercontent.com/GaelSM/Interactive-Comments/beae81a6cd5fa16fe787d92874f27b9df74ba57b/images/icon-reply.svg" alt="Reply Icon" />
                           <p> Reply </p>
                       </div>
                   }
