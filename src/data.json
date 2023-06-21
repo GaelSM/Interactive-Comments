@@ -1,8 +1,6 @@
 {
   "currentUser": {
-    "image": { 
-      "png": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-juliusomo.png"
-    },
+    "image": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-juliusomo.png",
     "username": "juliusomo"
   },
   "comments": [
@@ -12,9 +10,7 @@
       "createdAt": "1 month ago",
       "score": 12,
       "user": {
-        "image": { 
-          "png": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-amyrobson.png"
-        },
+        "image": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-amyrobson.png"
         "username": "amyrobson"
       },
       "replies": []
@@ -25,9 +21,7 @@
       "createdAt": "2 weeks ago",
       "score": 5,
       "user": {
-        "image": { 
-          "png": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-maxblagun.png"
-        },
+        "image": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-maxblagun.png",
         "username": "maxblagun"
       },
       "replies": [
@@ -38,9 +32,7 @@
           "score": 4,
           "replyingTo": "maxblagun",
           "user": {
-            "image": { 
-              "png": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-ramsesmiron.png"
-            },
+            "image": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-ramsesmiron.png",
             "username": "ramsesmiron"
           }
         },
@@ -51,9 +43,7 @@
           "score": 2,
           "replyingTo": "ramsesmiron",
           "user": {
-            "image": { 
-              "png": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-juliusomo.png"
-            },
+            "image": "https://raw.githubusercontent.com/GaelSM/Interactive-Comments/main/images/avatars/image-juliusomo.png",
             "username": "juliusomo"
           }
         }
