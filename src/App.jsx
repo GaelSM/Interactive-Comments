@@ -54,7 +54,6 @@ export default function App() {
             <Comment 
               {...reply} 
               key={reply.id}
-              userImage={reply.user.image}
               sangria={false} 
               currentUser={data.currentUser} 
               setComments={setComments} 
