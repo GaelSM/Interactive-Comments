@@ -2,7 +2,7 @@ import { useState } from "react"
 import Form from "./Form"
 import Modal from "./Modal"
 
-export default function Comment({index, score, userImage, user, createdAt, content, replies, sangria, currentUser, replyingTo, setComments, data, currentId, setCurrentId, fatherIndex, setChange}) {
+export default function Comment({index, score, user, createdAt, content, replies, sangria, currentUser, replyingTo, setComments, data, currentId, setCurrentId, fatherIndex, setChange}) {
 
   const [isReply, setIsReply] = useState(false)
   const [isEdit, setIsEdit] = useState(false)
@@ -85,7 +85,7 @@ export default function Comment({index, score, userImage, user, createdAt, conte
               <div className="content">
                 <div className="header">
                   <div className="user">
-                    <img src={userImage} alt="User Image" />
+                    <img src={user.image} alt="User Image" />
                     <p> <span> {user.username} </span> </p>
                     {currentUser.username === user.username ? <div> you </div> : ""}
                     <p> {createdAt} </p>
@@ -132,7 +132,6 @@ export default function Comment({index, score, userImage, user, createdAt, conte
                 <Comment 
                   {...reply} 
                   key={reply.id}
-                  userImage={userImage}
                   sangria={true} 
                   currentUser={currentUser} 
                   setComments={setComments} 
