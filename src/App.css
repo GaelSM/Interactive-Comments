@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root{
+    --Moderate-blue: hsl(238, 40%, 52%);
+    --Soft-Red: hsl(358, 79%, 66%);
+    --Light-grayish-blue: hsl(239, 57%, 85%);
+    --Pale-red: hsl(357, 100%, 86%);
+    --Dark-blue: hsl(212, 24%, 26%);
+    --Grayish-Blue: hsl(211, 10%, 45%);
+    --Light-gray: hsl(223, 19%, 93%);
+    --Very-light-gray: hsl(228, 33%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: auto;
+    padding: 4rem 0;
+    display: grid;
+    place-content: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Very-light-gray);
+}
+
+main{
+    position: relative;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+p{
+    color: var(--Grayish-Blue);
+}
+
+button{
+    cursor: pointer;
+    width: 105px;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background-color: var(--Moderate-blue);
+    color: var(--White);
+    border-radius: .5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    transition: opacity .3s ease;
+
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+textarea{
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    resize: none;
+    font-size: 1rem;
+    border: none;
+    outline: 1px solid var(--Light-gray);
+    border-radius: .5rem;
+}
+
+section{
+    &.sangria{
+        padding-left: 5rem;
+    }
+    
+    & .comments{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+article{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    background-color: var(--White);
+    gap: 1.5rem;
+
+    & .likes{
+        width: 2.5rem;
+        height: 6.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: .8rem;
+        background-color: var(--Light-gray);
+        overflow: hidden;
+        font-weight: 700;
+
+        & p{
+            color: var(--Moderate-blue);
+        }
+
+        & button{
+            width: 100%;
+            height: 35%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    & .content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        & .header{
+            display: flex;
+            justify-content: space-between;
+
+            & .user{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                & p span{
+                    font-weight: 500;
+                    color: var(--Dark-blue);
+                }
+
+                & img{
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                & div{
+                    border-radius: .2rem;
+                    padding: .1rem .4rem;
+                    font-size: .8rem;
+                    background-color: var(--Moderate-blue);
+                    color: var(--White);
+                }
+            }
+
+            & .reply{
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+                cursor: pointer;
+                transition: opacity .3s ease;
+
+                & p{
+                    font-weight: 700;
+                    color: var(--Moderate-blue);
+                }
+
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+
+            & .options{
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+
+                & div{
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    transition: opacity .3s ease;
+
+                    & p{
+                        font-weight: 700;
+                    }
+
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+
+                & .delete{
+                    & p {color: var(--Soft-Red);}
+                }
+
+                & .edit{
+                    & p {color: var(--Moderate-blue);}
+                }
+            }
+        }
+
+        & .text{
+            & p{
+                line-height: 1.7;
+
+                & span{
+                    font-weight: 500;
+                    color: var(--Moderate-blue);
+                }
+            }
+
+            & form{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                align-items: end;
+
+                & textarea{
+                    width: 100%;
+                    height: 8rem;
+                }
+            }
+        }
+    }
+}
+
+.add-comment{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 9rem;
+    padding: 1.5rem;
+    background-color: var(--White);
+    border-radius: 1rem;
+
+    & img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    & form{
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr auto;
+    }
+}
+
+.background{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 99;
+    display: grid;
+    place-content: center;
+    
+    & .modal{
+        border-radius: .5rem;
+        width: 25rem;
+        padding: 2rem;
+        background-color: var(--White);
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        & h2{
+            font-weight: 500;
+            color: var(--Dark-blue);
+        }
+
+        & p{
+            line-height: 1.5;
+        }
+
+        & .buttons{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+
+            & button{
+                font-weight: 500;
+                width: 100%;
+            }
+
+            & .delete{
+                background-color: var(--Soft-Red);
+            }
+
+            & .cancel{
+                background-color: var(--Grayish-Blue);
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    p{
+        font-size: .9rem;
+    }
+
+    main{
+        min-width: 90vw;
+    }
+    
+    section{
+        &.sangria{
+            padding-left: 1.5rem;
+        }
+    }
+
+    article{
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+
+        & .likes{
+            width: 6.25rem;
+            height: 2.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: .8rem;
+            background-color: var(--Light-gray);
+            overflow: hidden;
+            font-weight: 700;
+    
+            & button{
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+
+        & .content{
+            & .header{
+                & .reply{
+                    position: absolute;
+                    right: 1.75rem;
+                    bottom: 1.5rem;
+                }
+
+                & .options{
+                    position: absolute;
+                    right: 1.75rem;
+                    bottom: 1.5rem;
+                    gap: .5rem;
+                }
+            }
+        }
+    }
+
+    & .background{
+        & .modal{
+            width: 20rem;
+        }
+    }
+
+    .add-comment{
+        position: relative;
+        padding: 1rem;
+        height: auto;
+
+        & img{
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            width: 2rem;
+            height: 2rem;
+        }
+    
+        & form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+
+            & textarea{
+                width: 100%;
+                height: 6rem;
+            }
+        }
+    }
+}
